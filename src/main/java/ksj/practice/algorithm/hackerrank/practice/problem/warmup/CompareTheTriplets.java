@@ -1,12 +1,11 @@
-package ksj.practice.algorithm.hackerrank.warmup;
+package ksj.practice.algorithm.hackerrank.practice.problem.warmup;
 
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Stream;
+
 import static java.util.stream.Collectors.joining;
-import static java.util.stream.Collectors.toList;
 
 
 public class CompareTheTriplets {

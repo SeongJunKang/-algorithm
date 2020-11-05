@@ -1,4 +1,4 @@
-package ksj.practice.algorithm.hackerrank.java;
+package ksj.practice.algorithm.hackerrank.practice.java;
 
 import java.text.NumberFormat;
 import java.util.Locale;

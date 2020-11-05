@@ -1,4 +1,4 @@
-package ksj.practice.algorithm.hackerrank.java;
+package ksj.practice.algorithm.hackerrank.practice.java;
 
 import java.util.ArrayList;
 import java.util.List;
