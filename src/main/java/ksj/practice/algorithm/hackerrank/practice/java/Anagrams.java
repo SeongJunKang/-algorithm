@@ -3,6 +3,13 @@ package ksj.practice.algorithm.hackerrank.practice.java;
 import java.util.*;
 import java.util.stream.Collectors;
 
+/*
+해당 문자열들이 애너그램(anagrams)인지 확인하는 문제
+
+애너그램(anagram)이란 해당 알파벳들을 재배치하여 다른 문자로 만드는 것을 의미
+
+각각의 알파벳 수가 같으면 애너그램임
+ */
 public class Anagrams {
 
     static boolean isAnagram(String a, String b) {

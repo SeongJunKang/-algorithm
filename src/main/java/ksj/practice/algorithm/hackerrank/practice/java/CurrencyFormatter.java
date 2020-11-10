@@ -4,6 +4,11 @@ import java.text.NumberFormat;
 import java.util.Locale;
 import java.util.Scanner;
 
+/*
+해당하는 나라의 통화를 표시하는 문제
+
+인도의 통화는 존재하지 현재 Locale에 없기 때문에 사용자 정의를 진행
+ */
 public class CurrencyFormatter {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

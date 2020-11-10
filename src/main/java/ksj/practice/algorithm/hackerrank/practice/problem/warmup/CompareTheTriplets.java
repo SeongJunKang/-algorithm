@@ -4,9 +4,15 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Stream;
 
 import static java.util.stream.Collectors.joining;
+import static java.util.stream.Collectors.toList;
 
+/*
+3개의 값들중 Alice와 Bob의 값으로 대결하는 문제
+두 값을 비교하여 결과를 List로 저장한다
+ */
 
 public class CompareTheTriplets {
 
@@ -31,34 +37,35 @@ public class CompareTheTriplets {
     }
 
     public static void main(String[] args) throws IOException {
-//        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-//        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
-//
-//        List<Integer> a = Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
-//                .map(Integer::parseInt)
-//                .collect(toList());
-//
-//        List<Integer> b = Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
-//                .map(Integer::parseInt)
-//                .collect(toList());
-        Integer[] aArr = {5,6,7};
-        Integer[] bArr = {3,6,10};
-        List<Integer> a = Arrays.asList(aArr);
-        List<Integer> b = Arrays.asList(bArr);
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
+
+        List<Integer> a = Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
+                .map(Integer::parseInt)
+                .collect(toList());
+
+        List<Integer> b = Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
+                .map(Integer::parseInt)
+                .collect(toList());
+
+//        Integer[] aArr = {5,6,7};
+//        Integer[] bArr = {3,6,10};
+//        List<Integer> a = Arrays.asList(aArr);
+//        List<Integer> b = Arrays.asList(bArr);
 
         List<Integer> result = compareTriplets(a, b);
-        System.out.println(result.get(0));
-        System.out.println(result.get(1));
+//        System.out.println(result.get(0));
+//        System.out.println(result.get(1));
 
-//        bufferedWriter.write(
-//                result.stream()
-//                        .map(Object::toString)
-//                        .collect(joining(" "))
-//                        + "\n"
-//        );
-//
-//        bufferedReader.close();
-//        bufferedWriter.close();
+        bufferedWriter.write(
+                result.stream()
+                        .map(Object::toString)
+                        .collect(joining(" "))
+                        + "\n"
+        );
+
+        bufferedReader.close();
+        bufferedWriter.close();
     }
 
 }

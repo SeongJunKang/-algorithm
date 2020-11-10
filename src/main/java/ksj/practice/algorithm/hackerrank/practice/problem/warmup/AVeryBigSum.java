@@ -3,6 +3,10 @@ package ksj.practice.algorithm.hackerrank.practice.problem.warmup;
 import java.io.*;
 import java.util.*;
 
+/*
+Long Type으로 들어온 값을 더하는 문제
+ */
+
 public class AVeryBigSum {
 
     // Complete the aVeryBigSum function below.
@@ -17,7 +21,7 @@ public class AVeryBigSum {
     private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) throws IOException {
-//        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
+        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
 
         int arCount = scanner.nextInt();
         scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
@@ -34,10 +38,10 @@ public class AVeryBigSum {
 
         long result = aVeryBigSum(ar);
         System.out.println(result);
-//        bufferedWriter.write(String.valueOf(result));
-//        bufferedWriter.newLine();
-//
-//        bufferedWriter.close();
+        bufferedWriter.write(String.valueOf(result));
+        bufferedWriter.newLine();
+
+        bufferedWriter.close();
 
         scanner.close();
     }
