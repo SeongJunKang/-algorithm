@@ -3,9 +3,6 @@ out/*
 .gradle/*
 .idea/*
 .DS_Store
-gradlew
-gradlew.bat
-gradle/*
 *.iml
 *.pid
 
